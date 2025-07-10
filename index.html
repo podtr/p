@@ -19,7 +19,6 @@
                 <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
                 <li><a href="#about" class="nav-link">Hakkında</a></li>
                 <li><a href="#services" class="nav-link">Hizmetler</a></li>
-                <li><a href="#gallery" class="nav-link">Galeri</a></li>
                 <li><a href="#contact" class="nav-link">İletişim</a></li>
             </ul>
         </div>
@@ -49,23 +48,47 @@
         <div class="container">
             <h2 class="animate__animated animate__fadeIn">Hizmetlerimiz</h2>
             <div class="services-grid">
-                <!-- Hizmet Kartı 1 -->
+                <!-- Hizmet 1 -->
                 <div class="service-card" onclick="openModal('modal1')">
                     <img src="hizmet1.jpg" alt="Nasır Tedavisi" class="service-img">
                     <h3>Nasır Tedavisi</h3>
                     <p>Ağrısız ve etkili nasır tedavisi.</p>
                 </div>
-                <!-- Hizmet Kartı 2 -->
+                <!-- Hizmet 2 -->
                 <div class="service-card" onclick="openModal('modal2')">
                     <img src="hizmet2.jpg" alt="Diyabetik Ayak Bakımı" class="service-img">
                     <h3>Diyabetik Ayak Bakımı</h3>
                     <p>Diyabet hastalarına özel bakım.</p>
                 </div>
-                <!-- Hizmet Kartı 3 -->
+                <!-- Hizmet 3 -->
                 <div class="service-card" onclick="openModal('modal3')">
                     <img src="hizmet3.jpg" alt="Ortopedik Tabanlık" class="service-img">
                     <h3>Ortopedik Tabanlık</h3>
                     <p>Kişiye özel tabanlık çözümleri.</p>
+                </div>
+                <!-- Hizmet 4 -->
+                <div class="service-card" onclick="openModal('modal4')">
+                    <img src="hizmet4.jpg" alt="Tırnak Batması Tedavisi" class="service-img">
+                    <h3>Tırnak Batması Tedavisi</h3>
+                    <p>Hızlı ve konforlu tırnak batması çözümleri.</p>
+                </div>
+                <!-- Hizmet 5 -->
+                <div class="service-card" onclick="openModal('modal5')">
+                    <img src="hizmet5.jpg" alt="Medikal Pedikür" class="service-img">
+                    <h3>Medikal Pedikür</h3>
+                    <p>Hijyenik ve profesyonel pedikür hizmeti.</p>
+                </div>
+                <!-- Hizmet 6 -->
+                <div class="service-card" onclick="openModal('modal6')">
+                    <img src="hizmet6.jpg" alt="Ayak Masajı" class="service-img">
+                    <h3>Ayak Masajı</h3>
+                    <p>Rahatlatıcı ve iyileştirici ayak masajı.</p>
+                </div>
+                <!-- Hizmet 7 -->
+                <div class="service-card" onclick="openModal('modal7')">
+                    <img src="hizmet7.jpg" alt="Topuk Çatlak Tedavisi" class="service-img">
+                    <h3>Topuk Çatlak Tedavisi</h3>
+                    <p>Topuk çatlaklarına kalıcı çözümler.</p>
                 </div>
             </div>
         </div>
@@ -93,21 +116,36 @@
                 <button class="btn" onclick="closeModal('modal3')">Kapat</button>
             </div>
         </div>
-    </section>
-
-    <!-- Galeri Section -->
-    <section id="gallery" class="section section-gradient">
-        <div class="container">
-            <h2 class="animate__animated animate__fadeIn">Galeri</h2>
-            <div class="gallery-filters">
-                <button class="gallery-filter active" data-category="all">Tümü</button>
-                <button class="gallery-filter" data-category="oncessonra">Öncesi-Sonrası</button>
-                <button class="gallery-filter" data-category="klinik">Klinik Ortamı</button>
+        <!-- Modal 4 -->
+        <div id="modal4" class="modal">
+            <div class="modal-content animate__animated animate__fadeInUp">
+                <h3>Tırnak Batması Tedavisi</h3>
+                <p>Hızlı, ağrısız ve etkili tırnak batması tedavisi ile konforlu adımlar...</p>
+                <button class="btn" onclick="closeModal('modal4')">Kapat</button>
             </div>
-            <div class="gallery-grid">
-                <img src="galeri1.jpg" alt="Tedavi Öncesi-Sonrası" class="gallery-item" data-category="oncessonra">
-                <img src="galeri2.jpg" alt="Klinik Ortamı" class="gallery-item" data-category="klinik">
-                <img src="galeri3.jpg" alt="Tedavi Öncesi-Sonrası" class="gallery-item" data-category="oncessonra">
+        </div>
+        <!-- Modal 5 -->
+        <div id="modal5" class="modal">
+            <div class="modal-content animate__animated animate__fadeInUp">
+                <h3>Medikal Pedikür</h3>
+                <p>Hijyenik ortamda profesyonel medikal pedikür hizmeti...</p>
+                <button class="btn" onclick="closeModal('modal5')">Kapat</button>
+            </div>
+        </div>
+        <!-- Modal 6 -->
+        <div id="modal6" class="modal">
+            <div class="modal-content animate__animated animate__fadeInUp">
+                <h3>Ayak Masajı</h3>
+                <p>Rahatlatıcı ve kan dolaşımını destekleyen ayak masajı...</p>
+                <button class="btn" onclick="closeModal('modal6')">Kapat</button>
+            </div>
+        </div>
+        <!-- Modal 7 -->
+        <div id="modal7" class="modal">
+            <div class="modal-content animate__animated animate__fadeInUp">
+                <h3>Topuk Çatlak Tedavisi</h3>
+                <p>Topuk çatlaklarına özel bakım ve kalıcı çözümler...</p>
+                <button class="btn" onclick="closeModal('modal7')">Kapat</button>
             </div>
         </div>
     </section>
