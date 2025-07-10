@@ -1,4 +1,3 @@
-);
 // Hamburger Menü
 document.getElementById('menu-toggle').addEventListener('click', () => {
     const menu = document.querySelector('.nav-links');
@@ -35,4 +34,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
+});
+
+// Menü için ek kontrol (hata önleme)
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+        });
+    }
 });
