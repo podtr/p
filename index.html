@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Podolog Melisa - Profesyonel Ayak Sağlığı Hizmetleri">
+    <title>Podolog Melisa - Ayak Sağlığı</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo animate__animated animate__fadeIn">Podolog Melisa</a>
+            <button id="menu-toggle" class="menu-toggle">☰</button>
+            <ul class="nav-links hidden">
+                <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkında</a></li>
+                <li><a href="#services" class="nav-link">Hizmetler</a></li>
+                <li><a href="#gallery" class="nav-link">Galeri</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content animate__animated animate__fadeInUp">
+            <h1>Uzman Podolog ile Sağlıklı Adımlar</h1>
+            <p>Podolog Melisa ile ayak sağlığınızı profesyonel ellere emanet edin.</p>
+            <a href="#contact" class="btn">Randevu Al</a>
+        </div>
+        <a href="#about" class="scroll-down animate__animated animate__pulse animate__infinite">↓</a>
+    </section>
+
+    <!-- Hakkında Section -->
+    <section id="about" class="section section-gradient">
+        <div class="container animate__animated animate__fadeIn">
+            <h2>Hakkımda</h2>
+            <p>Podolog Melisa, [X] Üniversitesi Podoloji bölümünden mezun olmuş, [Y] yıl deneyimli bir ayak sağlığı uzmanıdır. Sertifikalı eğitimleri ve modern tekniklerle nasır tedavisi, diyabetik ayak bakımı ve ortopedik tabanlık gibi hizmetler sunar.</p>
+            <img src="podolog-foto.jpg" alt="Podolog Melisa Fotoğrafı" class="profile-img animate__animated animate__zoomIn">
+        </div>
+    </section>
+
+    <!-- Hizmetler Section -->
+    <section id="services" class="section section-gradient">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeIn">Hizmetlerimiz</h2>
+            <div class="services-grid">
+                <!-- Hizmet Kartı 1 -->
+                <div class="service-card" onclick="openModal('modal1')">
+                    <img src="hizmet1.jpg" alt="Nasır Tedavisi" class="service-img">
+                    <h3>Nasır Tedavisi</h3>
+                    <p>Ağrısız ve etkili nasır tedavisi.</p>
+                </div>
+                <!-- Hizmet Kartı 2 -->
+                <div class="service-card" onclick="openModal('modal2')">
+                    <img src="hizmet2.jpg" alt="Diyabetik Ayak Bakımı" class="service-img">
+                    <h3>Diyabetik Ayak Bakımı</h3>
+                    <p>Diyabet hastalarına özel bakım.</p>
+                </div>
+                <!-- Hizmet Kartı 3 -->
+                <div class="service-card" onclick="openModal('modal3')">
+                    <img src="hizmet3.jpg" alt="Ortopedik Tabanlık" class="service-img">
+                    <h3>Ortopedik Tabanlık</h3>
+                    <p>Kişiye özel tabanlık çözümleri.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 1 -->
+        <div id="modal1" class="modal">
+            <div class="modal-content animate__animated animate__fadeInUp">
+                <h3>Nasır Tedavisi</h3>
+                <p>Profesyonel ekipmanlarla ağrısız nasır tedavisi sunuyoruz. Tedavi süreci ve sonrası bakım önerileri...</p>
+                <button class="btn" onclick="closeModal('modal1')">Kapat</button>
+            </div>
+        </div>
+        <!-- Modal 2 -->
+        <div id="modal2" class="modal">
+            <div class="modal-content animate__animated animate__fadeInUp">
+                <h3>Diyabetik Ayak Bakımı</h3>
+                <p>Diyabet hastalarına özel ayak sağlığı hizmetleri, yara bakımı ve önleyici tedaviler...</p>
+                <button class="btn" onclick="closeModal('modal2')">Kapat</button>
+            </div>
+        </div>
+        <!-- Modal 3 -->
+        <div id="modal3" class="modal">
+            <div class="modal-content animate__animated animate__fadeInUp">
+                <h3>Ortopedik Tabanlık</h3>
+                <p>Ayak yapınıza uygun, kişiselleştirilmiş tabanlık çözümleri...</p>
+                <button class="btn" onclick="closeModal('modal3')">Kapat</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Section -->
+    <section id="gallery" class="section section-gradient">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeIn">Galeri</h2>
+            <div class="gallery-filters">
+                <button class="gallery-filter active" data-category="all">Tümü</button>
+                <button class="gallery-filter" data-category="oncessonra">Öncesi-Sonrası</button>
+                <button class="gallery-filter" data-category="klinik">Klinik Ortamı</button>
+            </div>
+            <div class="gallery-grid">
+                <img src="galeri1.jpg" alt="Tedavi Öncesi-Sonrası" class="gallery-item" data-category="oncessonra">
+                <img src="galeri2.jpg" alt="Klinik Ortamı" class="gallery-item" data-category="klinik">
+                <img src="galeri3.jpg" alt="Tedavi Öncesi-Sonrası" class="gallery-item" data-category="oncessonra">
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Section -->
+    <section id="contact" class="section section-gradient">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeIn">İletişim</h2>
+            <div class="contact-links">
+                <a href="https://wa.me/905123456789" target="_blank" aria-label="WhatsApp ile iletişime geç">
+                    <img src="whatsapp-icon.png" alt="WhatsApp" class="contact-icon">
+                </a>
+                <a href="mailto:ornek@gmail.com" aria-label="E-posta gönder">
+                    <img src="gmail-icon.png" alt="Gmail" class="contact-icon">
+                </a>
+                <a href="https://maps.google.com/?q=Konum" target="_blank" aria-label="Konumu görüntüle">
+                    <img src="location-icon.png" alt="Konum" class="contact-icon">
+                </a>
+            </div>
+            <div class="working-hours">
+                <h3>Çalışma Saatleri</h3>
+                <ul>
+                    <li>Pazartesi - Cuma: 09:00 - 18:00</li>
+                    <li>Cumartesi: 10:00 - 16:00</li>
+                    <li>Pazar: Kapalı</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Podolog Melisa. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
