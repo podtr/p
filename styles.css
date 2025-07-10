@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #FFF8E1;
+    background-color: #F5F5F5;
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
@@ -39,7 +39,7 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #FF8C00;
+    color: #1E90FF;
     text-decoration: none;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 .nav-link {
-    background: linear-gradient(to right, #FF8C00, #FFA500);
+    background: linear-gradient(to right, #1E90FF, #1873CC);
     color: #FFFFFF;
     text-decoration: none;
     font-size: 0.9rem;
@@ -71,7 +71,7 @@ body {
 .nav-link:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to right, #FFA500, #FF8C00);
+    background: linear-gradient(to right, #1873CC, #1E90FF);
 }
 
 @media (max-width: 768px) {
@@ -128,12 +128,12 @@ body {
 
 .hero-content p {
     font-size: 1.2rem;
-    color: #FFF8E1;
+    color: #E6F0FA;
     margin-bottom: 1.5rem;
 }
 
 .btn {
-    background: linear-gradient(to right, #FF8C00, #FFA500);
+    background: linear-gradient(to right, #1E90FF, #1873CC);
     color: #FFFFFF;
     padding: 0.75rem 1.5rem;
     border-radius: 9999px;
@@ -147,13 +147,13 @@ body {
 .btn:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(to right, #FFA500, #FF8C00);
+    background: linear-gradient(to right, #1873CC, #1E90FF);
 }
 
 .scroll-down {
     position: absolute;
     bottom: 2rem;
-    color: #FFF8E1;
+    color: #E6F0FA;
     font-size: 1.5rem;
     text-decoration: none;
     transform: rotate(90deg);
@@ -188,7 +188,7 @@ body {
 }
 
 .section-gradient {
-    background: linear-gradient(to bottom, #FFFFFF, #FFF8E1 50%, #FFEFD5);
+    background: linear-gradient(to bottom, #FFFFFF, #E6F0FA);
 }
 
 /* Hakkında */
@@ -199,7 +199,7 @@ body {
     border-radius: 50%;
     margin: 1rem auto;
     display: block;
-    border: 2px solid #FF8C00;
+    border: 2px solid #1E90FF;
 }
 
 /* Hizmetler */
@@ -217,13 +217,13 @@ body {
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    border: 1px solid #FFF8E1;
+    border: 1px solid #E6F0FA;
 }
 
 .service-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-color: #FF8C00;
+    border-color: #1E90FF;
 }
 
 .service-img {
@@ -273,7 +273,7 @@ body {
     width: 100%;
     text-align: center;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    border: 1px solid #FF8C00;
+    border: 1px solid #1E90FF;
     transform: scale(0.95);
     transition: transform 0.3s ease;
 }
@@ -286,7 +286,7 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #FF8C00;
+    color: #1E90FF;
 }
 
 .modal-content p {
@@ -323,7 +323,7 @@ body {
 .working-hours h3 {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #FF8C00;
+    color: #1E90FF;
     margin-bottom: 1rem;
 }
 
@@ -339,7 +339,7 @@ body {
 
 /* Footer */
 .footer {
-    background: linear-gradient(to bottom, #FF8C00, #FFA500);
+    background: linear-gradient(to bottom, #1E90FF, #1873CC);
     color: #FFFFFF;
     padding: 2rem 0;
     text-align: center;
