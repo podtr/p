@@ -16,24 +16,13 @@ function closeModal(id) {
     modal.querySelector('.modal-content').classList.remove('active');
 }
 
-// Galeri Filtreleme
-document.querySelectorAll('.gallery-filter').forEach(button => {
-    button.addEventListener('click', () => {
-        const category = button.getAttribute('data-category');
-        document.querySelectorAll('.gallery-filter').forEach(btn => {
-            btn.classList.remove('active');
-        });
-        button.classList.add('active');
-
-        document.querySelectorAll('.gallery-item').forEach(item => {
-            if (category === 'all' || item.getAttribute('data-category') === category) {
-                item.style.display = 'block';
-                item.classList.add('animate__animated', 'animate__fadeIn');
-            } else {
-                item.style.display = 'none';
-                item.classList.remove('animate__animated', 'animate__fadeIn');
-            }
-        });
+// Modal Dışına Tıklama ile Kapatma
+document.querySelectorAll('.modal').forEach(modal => {
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            modal.querySelector('.modal-content').classList.remove('active');
+        }
     });
 });
 
@@ -44,15 +33,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
-    });
-});
-
-// Modal Dışına Tıklama ile Kapatma
-document.querySelectorAll('.modal').forEach(modal => {
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.classList.remove('active');
-            modal.querySelector('.modal-content').classList.remove('active');
-        }
     });
 });
