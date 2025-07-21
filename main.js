@@ -15,7 +15,6 @@ function openModal(id) {
     modal.classList.add('active');
     modal.querySelector('.modal-content').classList.add('active');
 }
-
 function closeModal(id) {
     const modal = document.getElementById(id);
     modal.classList.remove('active');
@@ -57,4 +56,4 @@ document.addEventListener('DOMContentLoaded', () => {
         currentSlide = (currentSlide + 1) % slides.length;
         showSlide(currentSlide);
     }, 5000); // 5 saniyede bir geçiş
-});
+}); 
