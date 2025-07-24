@@ -11,20 +11,10 @@ const closeModal = document.querySelector('.close');
 // Service Data
 const serviceData = {
     'web-design': {
-        title: 'Web Tasarım Hizmetleri',
+        title: 'Mantar Tedavisi',
         content: `
-            <h3>Professional Web Tasarım</h3>
-            <p>Modern, responsive ve kullanıcı dostu web siteleri tasarlıyorum. Her projeye özel yaklaşım ile markanızı dijital dünyada en iyi şekilde temsil edecek çözümler üretiyorum.</p>
-            <h4>Hizmet Detayları:</h4>
-            <ul>
-                <li>Responsive tasarım (mobil uyumlu)</li>
-                <li>Modern ve kullanıcı dostu arayüz</li>
-                <li>SEO optimizasyonu</li>
-                <li>Hızlı yükleme süreleri</li>
-                <li>Cross-browser uyumluluğu</li>
-            </ul>
-            <p><strong>Süre:</strong> 2-4 hafta<br><strong>Fiyat:</strong> Projeye göre değişkenlik gösterir</p>
-        `
+            
+Ayak mantarı, nemli ortamlarda çoğalan mantarların neden olduğu, kaşıntı, kızarıklık ve deri soyulmasıyla kendini gösteren bir cilt enfeksiyonudur. Dar ayakkabılar, ortak alanlar (havuz, sauna) veya yetersiz ayak hijyeni mantar oluşumunu tetikleyebilir. Podolog olarak, mantar tedavisinde öncelikle etkilenen bölgeyi temizleyip uygun antifungal kremler öneriyoruz. Ayrıca, ayak hijyenine dikkat edilmesi, hava alan ayakkabılar kullanılması ve düzenli bakım ile tekrarlamasını önlüyoruz. Erken tedavi için randevu alarak sağlıklı ayaklara kavuşun!   `
     },
     'mobile-app': {
         title: 'Mobil Uygulama Geliştirme',
