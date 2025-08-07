@@ -10,90 +10,88 @@ const closeModal = document.querySelector('.close');
 
 // Service Data
 const serviceData = {
-    'web-design': {
+    'mantar-tedavisi': {
         title: 'Mantar Tedavisi',
         content: `
-            
-Ayak mantarı, nemli ortamlarda çoğalan mantarların neden olduğu, kaşıntı, kızarıklık ve deri soyulmasıyla kendini gösteren bir cilt enfeksiyonudur. Dar ayakkabılar, ortak alanlar (havuz, sauna) veya yetersiz ayak hijyeni mantar oluşumunu tetikleyebilir. Podolog olarak, mantar tedavisinde öncelikle etkilenen bölgeyi temizleyip uygun antifungal kremler öneriyoruz. Ayrıca, ayak hijyenine dikkat edilmesi, hava alan ayakkabılar kullanılması ve düzenli bakım ile tekrarlamasını önlüyoruz. Erken tedavi için randevu alarak sağlıklı ayaklara kavuşun!   `
-    },
-    'mobile-app': {
-        title: 'Mobil Uygulama Geliştirme',
-        content: `
-            <h3>iOS ve Android Uygulamaları</h3>
-            <p>Hem iOS hem de Android platformları için native ve cross-platform mobil uygulamalar geliştiriyorum. Kullanıcı deneyimini ön planda tutarak performanslı uygulamalar üretiyorum.</p>
-            <h4>Uygulama Türleri:</h4>
+            <h3>Ayak Mantarı Nedir?</h3>
+            <p>Ayak mantarı, genellikle nemli ortamlarda çoğalan mantarların neden olduğu, kaşıntı, kızarıklık, kötü koku ve deri döküntüsüyle kendini gösteren bulaşıcı bir cilt enfeksiyonudur.</p>
+            <h4>Podolog Ne Yapar?</h4>
             <ul>
-                <li>E-ticaret uygulamaları</li>
-                <li>Sosyal medya uygulamaları</li>
-                <li>Kurumsal uygulamalar</li>
-                <li>Oyun uygulamaları</li>
-                <li>Utility uygulamalar</li>
+                <li>Etkilenen bölgeyi steril şekilde temizler</li>
+                <li>Uygun antifungal bakım ürünleri önerir</li>
+                <li>Ayak hijyeni ve koruyucu önlemler hakkında danışmanlık verir</li>
             </ul>
-            <p><strong>Süre:</strong> 6-12 hafta<br><strong>Platform:</strong> iOS & Android</p>
+            <p><strong>Not:</strong> Erken müdahale, tedavi sürecini hızlandırır.</p>
         `
     },
-    'graphic-design': {
-        title: 'Grafik Tasarım Hizmetleri',
+    'batik-tedavisi': {
+        title: 'Batık Tırnak Tedavisi',
         content: `
-            <h3>Yaratıcı Grafik Tasarımları</h3>
-            <p>Markanızın kimliğini yansıtan özgün ve etkileyici grafik tasarımlar yapıyorum. Logo tasarımından kurumsal kimlik çalışmalarına kadar geniş bir yelpazede hizmet veriyorum.</p>
-            <h4>Tasarım Alanları:</h4>
+            <h3>Batık Tırnak Sorunu</h3>
+            <p>Tırnağın kenarlarının cilde gömülmesiyle oluşan bu durum, ağrıya, şişmeye ve bazen enfeksiyona neden olur. Dar ayakkabılar veya yanlış tırnak kesimi başlıca nedenlerindendir.</p>
+            <h4>Podolog Ne Yapar?</h4>
             <ul>
-                <li>Logo ve marka kimlik tasarımı</li>
-                <li>Katalog ve broşür tasarımı</li>
-                <li>Social media görselleri</li>
-                <li>Web banner tasarımları</li>
-                <li>Ambalaj tasarımı</li>
+                <li>Batık tırnağı cerrahi olmayan yöntemlerle düzeltir</li>
+                <li>Özel tel sistemi veya destek aparatları uygular</li>
+                <li>Enfeksiyon varsa bakım yapar ve yönlendirir</li>
             </ul>
-            <p><strong>Süre:</strong> 1-3 hafta<br><strong>Revizyon:</strong> 3 ücretsiz revizyon hakkı</p>
+            <p><strong>İpucu:</strong> Doğru tırnak kesimi batık oluşumunu engeller.</p>
         `
     },
-    'seo': {
-        title: 'SEO Optimizasyon',
+    'travma-tedavisi': {
+        title: 'Travmaya Bağlı Ayak Sorunları',
         content: `
-            <h3>Arama Motoru Optimizasyonu</h3>
-            <p>Web sitenizin arama motorlarında üst sıralarda yer alması için teknik ve içerik optimizasyonu yapıyorum. Organik trafiğinizi artırarak potansiyel müşterilere ulaşmanızı sağlıyorum.</p>
-            <h4>SEO Hizmetleri:</h4>
+            <h3>Travma Sonrası Ayak Bakımı</h3>
+            <p>Darbe, düşme veya uzun süreli basınç sonucu oluşan travmalar; tırnakta renk değişimi, kalınlaşma, morarma ya da deformasyon şeklinde görülebilir.</p>
+            <h4>Podolog Ne Yapar?</h4>
             <ul>
-                <li>Anahtar kelime analizi ve stratejisi</li>
-                <li>On-page optimizasyon</li>
-                <li>Teknik SEO analizi</li>
-                <li>İçerik optimizasyonu</li>
-                <li>Backlink stratejileri</li>
+                <li>Tırnak ya da ciltte oluşan hasarı değerlendirir</li>
+                <li>Koruyucu ve destekleyici bakım uygular</li>
+                <li>Gerektiğinde ileri tedavi için yönlendirir</li>
             </ul>
-            <p><strong>Süre:</strong> 3-6 ay<br><strong>Rapor:</strong> Aylık detaylı analiz raporu</p>
+            <p><strong>Öneri:</strong> Travma sonrası erken bakım kalıcı hasarı önler.</p>
         `
     },
-    'ecommerce': {
-        title: 'E-ticaret Çözümleri',
+    'topuk-catlagi': {
+        title: 'Topuk Çatlakları Tedavisi',
         content: `
-            <h3>Online Mağaza Sistemleri</h3>
-            <p>Güvenli, kullanıcı dostu ve satış odaklı e-ticaret siteleri geliştiriyorum. Ödeme sistemlerinden stok takibine kadar tüm süreçleri yönetebileceğiniz kapsamlı çözümler sunuyorum.</p>
-            <h4>E-ticaret Özellikleri:</h4>
+            <h3>Topuk Çatlakları Neden Olur?</h3>
+            <p>Cilt kuruluğu, fazla kilo, uzun süre ayakta kalmak ya da uygun olmayan ayakkabılar çatlaklara yol açabilir. Estetik kaygının ötesinde enfeksiyon riski taşır.</p>
+            <h4>Podolog Ne Yapar?</h4>
             <ul>
-                <li>Güvenli ödeme sistemleri</li>
-                <li>Stok ve sipariş yönetimi</li>
-                <li>Kullanıcı hesap sistemi</li>
-                <li>Mobil uyumlu tasarım</li>
-                <li>SEO optimizasyonu</li>
+                <li>Ölü dokuyu özel cihazlarla temizler</li>
+                <li>Nemlendirici ve iyileştirici ürünlerle bakım yapar</li>
+                <li>Koruyucu ped ve krem önerisinde bulunur</li>
             </ul>
-            <p><strong>Süre:</strong> 4-8 hafta<br><strong>Destek:</strong> 1 yıl teknik destek</p>
+            <p><strong>Not:</strong> Düzenli bakım sağlıklı ve pürüzsüz topuklar için şarttır.</p>
         `
     },
-    'consultation': {
-        title: 'Dijital Danışmanlık',
+    'nasir': {
+        title: 'Nasır Tedavisi',
         content: `
-            <h3>Dijital Strateji ve Danışmanlık</h3>
-            <p>Dijital dünyadaki varlığınızı güçlendirmek için stratejik danışmanlık hizmeti veriyorum. Mevcut durumunuzu analiz ederek en uygun dijital çözümleri öneriyorum.</p>
-            <h4>Danışmanlık Alanları:</h4>
+            <h3>Nasır Nedir?</h3>
+            <p>Basınca ve sürtünmeye bağlı olarak ciltte oluşan sertleşmiş kalınlaşmalardır. Ağrılı olabilir ve yürüme konforunu bozar.</p>
+            <h4>Podolog Ne Yapar?</h4>
             <ul>
-                <li>Dijital strateji geliştirme</li>
-                <li>Web sitesi analizi ve önerileri</li>
-                <li>Sosyal medya stratejisi</li>
-                <li>Pazarlama otomasyonu</li>
-                <li>Teknoloji seçimi danışmanlığı</li>
+                <li>Nasırı ağrısız yöntemlerle temizler</li>
+                <li>Basınç dağıtıcı tabanlık ya da silikon destek önerir</li>
+                <li>Ayakkabı ve yürüme alışkanlıklarına dair öneriler sunar</li>
             </ul>
-            <p><strong>Format:</strong> Online/Yüz yüze görüşme<br><strong>Süre:</strong> İhtiyaca göre değişkenlik gösterir</p>
+            <p><strong>Uyarı:</strong> Kendi kendine kazımak enfeksiyona yol açabilir.</p>
+        `
+    },
+    'sigil': {
+        title: 'Siğil (Verruka) Tedavisi',
+        content: `
+            <h3>Ayak Siğili Nedir?</h3>
+            <p>HPV virüsünün neden olduğu, genellikle ayak tabanında görülen sert, basınca duyarlı ve bazen siyah noktalarla belirgin cilt lezyonlarıdır.</p>
+            <h4>Podolog Ne Yapar?</h4>
+            <ul>
+                <li>Siğili steril ortamda mekanik yöntemlerle temizler</li>
+                <li>Uygun lokal ürünlerle destek tedavi uygular</li>
+                <li>Hijyen ve bulaş riskine karşı öneriler sunar</li>
+            </ul>
+            <p><strong>Bilinçli Müdahale:</strong> Siğillerin çoğalmasını önlemek için profesyonel destek şarttır.</p>
         `
     }
 };
